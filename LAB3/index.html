@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			li:hover {
+				border-color: rgb(206, 55, 55);
+				transition: all 0.23s;
+				border-radius: 0px;
+				scale: 1.1;
+
+				transform: translateX(50px);
+			}
+			li {
+				border-left: 3px solid black;
+				padding: 5px;
+				user-select: none;
+				border-radius: 5px;
+				transition: all 0.23s;
+				margin-bottom: 5px;
+			}
+			ul {
+				list-style-type: none;
+				padding-left: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Рівень 1, Елемент 1
+				<ul>
+					<li>
+						Рівень 2, Елемент 1
+						<ul>
+							<li>Рівень 3, Елемент 1</li>
+							<li>Рівень 3, Елемент 2</li>
+						</ul>
+					</li>
+					<li>
+						Рівень 2, Елемент 2
+						<ul>
+							<li>Рівень 3, Елемент 3</li>
+							<li>Рівень 3, Елемент 4</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
