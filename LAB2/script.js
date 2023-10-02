@@ -29,7 +29,7 @@ for (i = 0; i < tbodyElementsTd.length; i++)
 
 let text = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ea earum incidunt minima nihil. Blanditiis consectetur cumque debitis delectus dolor dolorem dolorum, eos laboriosam, modi nemo, quasi quos sint voluptatibus!`
 
-const arrayFromText = text.split('')
+const arrayFromText = text.split(' ')
 const newArr = []
 newArr.push(
 	arrayFromText[12],

@@ -1,0 +1,96 @@
+
+.gallery-img{
+    background: url("https://ichef.bbci.co.uk/news/999/cpsprodpb/15951/production/_117310488_16.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    filter: grayscale(100%);
+    opacity:0.5; 
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.activeState{
+    filter: grayscale(0%);
+    opacity:1; 
+}
+.focused{
+    background-color: lightblue;
+}
+.form section{
+    padding: 20px;
+}
+.task7container{
+    position: relative;
+}
+.figure{
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    position: absolute;
+    right: 200px;
+    bottom: 5px;
+    cursor: pointer;
+    transform-origin: center center;
+    transition: transform 0.2s;
+}
+.task8container img{
+    
+    right: 0;
+    width: 100px;
+    height: 100px;
+}
+table{
+    width: 200px;
+    min-height: 20px;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+table,tr,td{
+    border: 1px solid black;
+}
+table button{
+padding: 20px;
+}
+.slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slide-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+ position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#left-btn {
+    left: 10px;
+}
+
+#right-btn {
+    right: 10px;
+}
