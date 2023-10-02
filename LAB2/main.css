@@ -1,0 +1,15 @@
+.selected {
+	background-color: yellow;
+}
+table {
+	width: 300px;
+	border-collapse: collapse;
+	border: 1px solid black;
+	height: 300px;
+}
+tr {
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			body {
+				text-align: center;
+			}
+			p {
+				color: rgb(151, 36, 36);
+			}
+			form {
+				margin: 0 auto;
+				width: 430px;
+				display: flex;
+				flex-direction: column;
+				text-align: left;
+			}
+			div {
+				position: relative;
+				margin-bottom: 15px;
+			}
+			.div .input input {
+				width: 100%;
+				border: 0;
+				padding: 20px 20px 20px 40px;
+				font-size: 20px;
+				background-color: rgb(185, 185, 185) !important;
+				border-bottom: 2px solid rgb(109, 109, 109);
+			}
+			input:focus {
+				outline: 0;
+				background-color: white;
+			}
+			input:placeholder-shown ~ p {
+				display: block;
+			}
+			input:valid:not(:focus):not(:placeholder-shown) {
+				border: 2px solid rgb(86, 148, 86) !important;
+				background: url('./free-icon-like-1077044.png') 5px 50% / contain
+					no-repeat;
+				background-size: 6%;
+				background-color: rgb(123, 182, 123) !important;
+			}
+			input:focus {
+				background-color: white !important;
+			}
+			input:invalid {
+				background-color: pink !important;
+			}
+			input:invalid:not(:focus):not(:placeholder-shown) ~ p {
+				display: inline;
+				left: 20px;
+			}
+			input:empty ~ p {
+				display: inline;
+			}
+			p {
+				display: none;
+			}
+			button {
+				display: block;
+				height: 30px;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Registration</h1>
+		<form action="#">
+			<div>
+				<label for="user">User name</label>
+				<input type="text" name="user" placeholder=" " />
+				<p>Неправильно введене ім`я користувача</p>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder=" " />
+				<p>Неправильно введена електронна пошта</p>
+			</div>
+			<div>
+				<label for="pass">Password</label>
+				<input type="password" name="pass" placeholder=" " />
+				<p>Неправильно введений пароль</p>
+			</div>
+			<button>Зареєструватися</button>
+		</form>
+	</body>
+</html>
