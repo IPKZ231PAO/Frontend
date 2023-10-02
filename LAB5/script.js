@@ -261,6 +261,20 @@ const nextSlideBtn=document.querySelector('#right-btn')
 const prevSlideBtn=document.querySelector('#left-btn')
 let curSlide = 0;
 
+
+const ShowPrevSlide=() =>{
+    slides[curSlide].style.transform = 'translateX(100%)';
+    curSlide = (curSlide - 1 + slides.length) % slides.length;
+    slides[curSlide].style.transform = 'translateX(0)';
+}
+
+const ShowNextSlide=()=> {
+    slides[curSlide].style.transform = 'translateX(-100%)';
+    curSlide = (curSlide + 1) % slides.length;
+    slides[curSlide].style.transform = 'translateX(0)';
+}
+
+
 prevSlideBtn.addEventListener('click', () => {
     ShowPrevSlide();
 });
@@ -268,18 +282,4 @@ prevSlideBtn.addEventListener('click', () => {
 nextSlideBtn.addEventListener('click', () => {
     ShowNextSlide();
 });
-
-function ShowPrevSlide() {
-    slides[curSlide].style.transform = 'translateX(100%)';
-    curSlide = (curSlide - 1 + slides.length) % slides.length;
-    slides[curSlide].style.transform = 'translateX(0)';
-}
-
-function ShowNextSlide() {
-    slides[curSlide].style.transform = 'translateX(-100%)';
-    curSlide = (curSlide + 1) % slides.length;
-    slides[curSlide].style.transform = 'translateX(0)';
-}
-
-
 
