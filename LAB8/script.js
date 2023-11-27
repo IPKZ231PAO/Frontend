@@ -160,5 +160,5 @@ const startAnimation=() =>{
     initBlocks();
     setInterval(updateBlocks, 20)
 }
-
+ 
 startAnimation()

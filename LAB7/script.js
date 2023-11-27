@@ -5,16 +5,16 @@ const task1=()=>{
 
     document.querySelector('body').appendChild(task1container).classList.add('task1container')
     task1container.appendChild(square).classList.add('square')
-
+  
     square.addEventListener('mousedown', (e) => {
-        if (e.button === 0) {
+        if (e.button === 0) {       
             task1container.addEventListener('mousemove', moveSquare);
             e.preventDefault();
         }
     });
     
     task1container.addEventListener('mouseup', () => {
-        task1container.removeEventListener('mousemove', moveSquare);
+          task1container.removeEventListener('mousemove', moveSquare);
     });
     
     function moveSquare(e) {

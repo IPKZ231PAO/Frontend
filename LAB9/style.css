@@ -1,0 +1,155 @@
+.modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border: 1px solid #000;
+	background-color: #fff;
+	z-index: 1000;
+	cursor: move;
+}
+
+.modal-header {
+	cursor: move;
+}
+.modal-content {
+	user-select: none;
+}
+.slider {
+	overflow: hidden;
+	position: relative;
+
+	text-align: center;
+}
+
+.slides {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	min-width: 100%;
+	box-sizing: border-box;
+}
+
+.controls {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	font-size: 24px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+form {
+	max-width: 400px;
+	margin: 20px auto;
+}
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+}
+button {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #45a049;
+}
+.tabs {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tab {
+	cursor: pointer;
+	padding: 10px;
+	margin-right: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px 5px 0 0;
+}
+
+.tab:hover {
+	background-color: #f1f1f1;
+}
+
+.tab.active {
+	background-color: #ddd;
+}
+
+.tab-content {
+	display: none;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 0 0 5px 5px;
+}
+
+.tab-content.active {
+	display: block;
+}
+.notification-container {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	max-width: 300px;
+	z-index: 9999;
+}
+.notification {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	display: none;
+	cursor: pointer;
+}
+.success {
+	background-color: #4caf50;
+	color: #fff;
+}
+.info {
+	background-color: #2196f3;
+	color: #fff;
+}
+.warning {
+	background-color: #ff9800;
+	color: #fff;
+}
+.error {
+	background-color: #f44336;
+	color: #fff;
+}
+.close-btn {
+	float: right;
+	font-weight: bold;
+	cursor: pointer;
+}
