@@ -1,0 +1,52 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 600px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+img {
+	max-width: 100px;
+	margin: 10px;
+	cursor: pointer;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#message {
+	color: green;
+}
+
+#error {
+	color: red;
+}
+table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+th,
+td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+}
+
+tbody {
+	color: #3d813d;
+}
+
+thead {
+	background-color: #3d813d; /* Змініть колір на ваш вибір */
+	color: white !important;
+}
+
+.green-text {
+	color: #3d813d;
+}

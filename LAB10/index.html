@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./script.js"></script>
+	</head>
+	<body><form id="myForm">
+		<label for="name">Ім'я:</label>
+		<input type="text" id="name" name="name">
+		<br>
+		<label for="email">Електронна пошта:</label>
+		<input type="email" id="email" name="email">
+		<br>
+		<label for="message">Повідомлення:</label>
+		<textarea id="message" name="message"></textarea>
+		<br>
+		<label for="checkbox">Підтвердження:</label>
+		<input type="checkbox" id="checkbox" name="checkbox">
+		<br>
+		<label for="radio1">Опція 1:</label>
+		<input type="radio" id="radio1" name="radio" value="option1">
+		<br>
+		<label for="radio2">Опція 2:</label>
+		<input type="radio" id="radio2" name="radio" value="option2">
+		<br>
+		<label for="select">Виберіть опцію:</label>
+		<select id="select" name="select">
+			<option value="option1">Опція 1</option>
+			<option value="option2">Опція 2</option>
+			<option value="option3">Опція 3</option>
+		</select>
+		<br>
+	
+
+		<div class="container">
+			<input type="text" id="fileInput" placeholder="Введіть масив JSON">
+			<button onclick="showImages()">Показати зображення</button>
+			<div id="imageContainer"></div>
+			<span id="message"></span>
+			<div id="error"></div>
+		  </div>
+
+
+		  <div id="listOfStudents"></div>
+<div id="styledTable"></div>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, quos.</p>
+<button id="draw">draw</button>
+<button id="fill">fill</button>
+<div id="container"></div>
+	</body>
+</html>
