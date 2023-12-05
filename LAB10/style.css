@@ -35,18 +35,17 @@ th,
 td {
 	border: 1px solid black;
 	padding: 8px;
-	text-align: left;
 }
 
 tbody {
-	color: #3d813d;
+	color: #3d4781;
 }
 
 thead {
-	background-color: #3d813d; /* Змініть колір на ваш вибір */
+	background-color: #4f3d81;
 	color: white !important;
 }
 
-.green-text {
-	color: #3d813d;
+.text {
+	color: #553d81;
 }

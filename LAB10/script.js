@@ -99,7 +99,7 @@ class ListOfStudents {
 		}
 		table += '</table>'
 		table +=
-			'<br><span class="green-text">Total avg of group: ' +
+			'<br><span class="text">Total avg of group: ' +
 			this.getTotalAvg() +
 			'</span><br>'
 		return table
